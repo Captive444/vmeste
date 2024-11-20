@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^add_friend\.php$ add_friend.php [L] 
+RewriteRule ^messages/send_message\.php$ messages/send_message.php [L]
+
+
+
+RewriteRule ^ajax/del_ajax\.php$ ajax/del_ajax.php [L]
+RewriteRule ^ajax/remove_ajax\.php$ ajax/remove_ajax.php [L]
+RewriteRule ^ajax/accept_ajax\.php$ ajax/accept_ajax.php [L]
+
+RewriteCond %{REQUEST_URI} ^/post/
+RewriteRule ^post/add_post\.php$ post/add_post.php [L]
+RewriteRule ^post/get_posts\.php$ post/get_posts.php [L]
+
+
+RewriteCond %{REQUEST_URI} !\.(js|css|ico|jpg|png|gif)$
+RewriteRule .+ index.php [L]

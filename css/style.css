@@ -1,0 +1,300 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4971ad;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    color: #4a76a8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e8ec;
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+
+    font-size: 16px;
+    
+    margin-right: 10px;
+  
+}
+
+.search-form button {
+    background-color: #4971ad;
+  
+    border: none;
+    color: #fff;
+  
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.search-form button:hover {
+    background-color: #3c5a92;
+
+}
+
+.user-menu a {
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    margin-right: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    float: left;
+    border-radius: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.sidebar li a:hover {
+    background-color: #f0f2f5;
+}
+
+.main-content {
+    flex: 1;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* float: left;
+    border-radius: 5px; */
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #e7e8ec;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* для списка друзей и добавления в друзья */
+
+.friend-request {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.friend-request .buttons {
+    margin-left: auto;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #F44336;
+    color: white;
+}
+
+/* messages */
+
+ .dialog-wrapper {
+     width: 960px;
+     margin: 0 auto;
+     background-color: #fff;
+     padding: 20px;
+     border: 1px solid #ddd;
+ }
+/* .messages-list {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+} */
+
+.message-item {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e7e8ec;
+    color: #333;
+}
+
+.message-item:last-child {
+    border-bottom: none;
+}
+
+.message-item:hover {
+    background-color: #f0f2f5;
+}
+
+.message-item .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.message-info {
+    flex-grow: 1;
+}
+
+.message-info .username {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-info .message-text {
+    margin-bottom: 0;
+}
+
+.message-info .timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+/* регистрация и вход */
+
+.formLog {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formLog h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formLog label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formLog input[type="text"],
+.formLog input[type="password"],
+.formLog input[type="date"],
+.formLog input[type="email"],
+.formLog textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.formLog textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.formLog input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4971ad;
+    /* Основной цвет */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formLog input[type="submit"]:hover {
+    background-color: #3c5a92;
+    /* Темнее при наведении */
+}
+
+/* Адаптивная компоновка (при ширине экрана меньше 500px) */
+@media (max-width: 500px) {
+    .formLog {
+        width: 90%;
+    }
+}
+
+/* .alert-danger {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+
+} */
